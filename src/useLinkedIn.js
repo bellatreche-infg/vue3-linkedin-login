@@ -95,8 +95,6 @@ export function useLinkedIn({
 
     url = `${url}?${params.toString()}`;
 
-    url = encodeURIComponent(url);
-
     if (useProxy) {
       url = `${proxyUrl}${url}`;
     }
